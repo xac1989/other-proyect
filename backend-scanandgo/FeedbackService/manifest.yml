@@ -1,8 +1,0 @@
----
-applications:
-- name: scan-and-go-dev-feedback-service
-  memory: 512M
-  host: scan-and-go-dev-feedback-service
-  domain: mybluemix.net
-  env:
-    SPRING_PROFILES_ACTIVE: dev

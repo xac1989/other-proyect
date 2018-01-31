@@ -1,6 +1,0 @@
-mongoConfig:
-  database: "product"
-security:
-  user:
-    name: cencoappuser
-    password: HjztW7dQL7Y8XJ5cZbpfgMHb

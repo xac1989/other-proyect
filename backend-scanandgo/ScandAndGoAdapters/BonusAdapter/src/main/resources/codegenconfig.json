@@ -1,7 +1,0 @@
-{
-	"modelPackage" 	: "com.cencosud.middleware.bonus.model",
-	"apiPackage" 	: "com.cencosud.mobile.bonus.adapter",
-	"additionalProperties" : {
-		"autowiredSpringService"  : "true"
-	}
-}

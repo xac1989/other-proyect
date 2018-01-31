@@ -1,7 +1,0 @@
-{
-	"modelPackage" 	: "com.cencosud.mobile.feedback.model",
-	"apiPackage" 	: "com.cencosud.mobile.feedback.adapter",
-	"additionalProperties" : {
-		"autowiredSpringService"  : "true"
-	}
-}

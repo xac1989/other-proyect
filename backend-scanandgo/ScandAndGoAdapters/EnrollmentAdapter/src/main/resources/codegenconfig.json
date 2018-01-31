@@ -1,7 +1,0 @@
-{
-	"modelPackage" 	: "com.cencosud.mobile.enrollment.model",
-	"apiPackage" 	: "com.cencosud.mobile.enrollment.adapter",
-	"additionalProperties" : {
-		"autowiredSpringService"  : "true"
-	}
-}
