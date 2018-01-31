@@ -1,0 +1,1068 @@
+[
+    {
+        "productId": "1490",
+        "productName": "Aceite de Oliva Trattoria 500 ml",
+        "brand": "Trattoria",
+        "linkText": "aceite-de-oliva-trattoria-500-ml",
+        "productReference": "1518286",
+        "categoryId": "33",
+        "clusterHighlights": {},
+        "categories": [
+            "/Despensa/Abarrotes/Aceite/",
+            "/Despensa/Abarrotes/",
+            "/Despensa/"
+        ],
+        "categoriesIds": [
+            "/31/32/33/",
+            "/31/32/",
+            "/31/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-de-oliva-trattoria-500-ml/p",
+        "ProductData": [
+            "{\"ref_id\":\"1518286\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Trattoria\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.5,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"1494\":{\"ref_id\":\"1518286\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.5,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Encuentra lo mejor en Jumbo.cl",
+        "items": [
+            {
+                "itemId": "1494",
+                "name": "Aceite de Oliva Trattoria 500 ml",
+                "nameComplete": "Aceite de Oliva Trattoria 500 ml",
+                "complementName": "",
+                "ean": "7802575204073",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "1518286"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "179734",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/179734-#width#-#height#/1518286.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-de-Oliva-Trattoria-500-ml\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/179734/1518286.jpg",
+                        "imageText": "Aceite-de-Oliva-Trattoria-500-ml"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=1494&qty=1&seller=1&sc=1&price=366900&cv=4724ecad1a67e182847baf8421069d45_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 3669,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 3669,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 3669,
+                            "ListPrice": 3669,
+                            "PriceWithoutDiscount": 3669,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:52:37.6087201Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "4724ecad1a67e182847baf8421069d45_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "1489",
+        "productName": "Aceite de Oliva Trattoria 250 ml",
+        "brand": "Trattoria",
+        "linkText": "aceite-de-oliva-trattoria-250-ml",
+        "productReference": "1518285",
+        "categoryId": "33",
+        "clusterHighlights": {},
+        "categories": [
+            "/Despensa/Abarrotes/Aceite/",
+            "/Despensa/Abarrotes/",
+            "/Despensa/"
+        ],
+        "categoriesIds": [
+            "/31/32/33/",
+            "/31/32/",
+            "/31/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-de-oliva-trattoria-250-ml/p",
+        "ProductData": [
+            "{\"ref_id\":\"1518285\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Trattoria\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.25,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"1493\":{\"ref_id\":\"1518285\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.25,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Encuentra lo mejor en Jumbo.cl",
+        "items": [
+            {
+                "itemId": "1493",
+                "name": "Aceite de Oliva Trattoria 250 ml",
+                "nameComplete": "Aceite de Oliva Trattoria 250 ml",
+                "complementName": "",
+                "ean": "7802575204004",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "1518285"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "179733",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/179733-#width#-#height#/1518285.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-de-Oliva-Trattoria-250-ml\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/179733/1518285.jpg",
+                        "imageText": "Aceite-de-Oliva-Trattoria-250-ml"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=1493&qty=1&seller=1&sc=1&price=224900&cv=6c8cae53c8f0767ca0867aff17984773_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 2249,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 2249,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 2249,
+                            "ListPrice": 2249,
+                            "PriceWithoutDiscount": 2249,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:49.4799594Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "6c8cae53c8f0767ca0867aff17984773_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "1487",
+        "productName": "Aceite de Oliva Terra Santa Botella 500 ml, Extra virgen",
+        "brand": "Terra Santa",
+        "linkText": "aceite-de-oliva-terra-santa-botella-500-ml-extra-virgen",
+        "productReference": "948660",
+        "categoryId": "33",
+        "clusterHighlights": {},
+        "categories": [
+            "/Despensa/Abarrotes/Aceite/",
+            "/Despensa/Abarrotes/",
+            "/Despensa/"
+        ],
+        "categoriesIds": [
+            "/31/32/33/",
+            "/31/32/",
+            "/31/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-de-oliva-terra-santa-botella-500-ml-extra-virgen/p",
+        "ProductData": [
+            "{\"ref_id\":\"948660\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Terra Santa\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.5,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"1491\":{\"ref_id\":\"948660\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.5,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Encuentra lo mejor en Jumbo.cl",
+        "items": [
+            {
+                "itemId": "1491",
+                "name": "Aceite de Oliva Terra Santa Botella 500 ml, Extra virgen",
+                "nameComplete": "Aceite de Oliva Terra Santa Botella 500 ml, Extra virgen",
+                "complementName": "",
+                "ean": "7804609780010",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "948660"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "179731",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/179731-#width#-#height#/948660.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-de-Oliva-Terra-Santa-Botella-500-ml-Extra-virgen\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/179731/948660.jpg",
+                        "imageText": "Aceite-de-Oliva-Terra-Santa-Botella-500-ml-Extra-virgen"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=1491&qty=1&seller=1&sc=1&price=317000&cv=93038fdae7a33f28995c62fc6a40b2eb_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 3170,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 3170,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 3170,
+                            "ListPrice": 3170,
+                            "PriceWithoutDiscount": 3170,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:49.4831163Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "93038fdae7a33f28995c62fc6a40b2eb_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "1486",
+        "productName": "Aceite de Oliva Terra Santa Botella 250 ml, Extra virgen",
+        "brand": "Terra Santa",
+        "linkText": "aceite-de-oliva-terra-santa-botella-250-ml-extra-virgen",
+        "productReference": "948659",
+        "categoryId": "33",
+        "clusterHighlights": {},
+        "categories": [
+            "/Despensa/Abarrotes/Aceite/",
+            "/Despensa/Abarrotes/",
+            "/Despensa/"
+        ],
+        "categoriesIds": [
+            "/31/32/33/",
+            "/31/32/",
+            "/31/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-de-oliva-terra-santa-botella-250-ml-extra-virgen/p",
+        "ProductData": [
+            "{\"ref_id\":\"948659\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Terra Santa\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.25,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"1490\":{\"ref_id\":\"948659\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.25,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Encuentra lo mejor en Jumbo.cl",
+        "items": [
+            {
+                "itemId": "1490",
+                "name": "Aceite de Oliva Terra Santa Botella 250 ml, Extra virgen",
+                "nameComplete": "Aceite de Oliva Terra Santa Botella 250 ml, Extra virgen",
+                "complementName": "",
+                "ean": "7804609780003",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "948659"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "179730",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/179730-#width#-#height#/948659.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-de-Oliva-Terra-Santa-Botella-250-ml-Extra-virgen\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/179730/948659.jpg",
+                        "imageText": "Aceite-de-Oliva-Terra-Santa-Botella-250-ml-Extra-virgen"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=1490&qty=1&seller=1&sc=1&price=224900&cv=97ae200011d223464290cb6afc4b6165_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 2249,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 2249,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 2249,
+                            "ListPrice": 2249,
+                            "PriceWithoutDiscount": 2249,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:50.1968928Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "97ae200011d223464290cb6afc4b6165_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "1485",
+        "productName": "Aceite de Oliva Talliani Botella 1 L",
+        "brand": "Talliani",
+        "linkText": "aceite-de-oliva-talliani-botella-1-l",
+        "productReference": "1509542",
+        "categoryId": "33",
+        "clusterHighlights": {},
+        "categories": [
+            "/Despensa/Abarrotes/Aceite/",
+            "/Despensa/Abarrotes/",
+            "/Despensa/"
+        ],
+        "categoriesIds": [
+            "/31/32/33/",
+            "/31/32/",
+            "/31/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-de-oliva-talliani-botella-1-l/p",
+        "ProductData": [
+            "{\"ref_id\":\"1509542\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Talliani\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":1,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"1489\":{\"ref_id\":\"1509542\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":1,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Encuentra lo mejor en Jumbo.cl",
+        "items": [
+            {
+                "itemId": "1489",
+                "name": "Aceite de Oliva Talliani Botella 1 L",
+                "nameComplete": "Aceite de Oliva Talliani Botella 1 L",
+                "complementName": "",
+                "ean": "7801320242247",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "1509542"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "179729",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/179729-#width#-#height#/1509542.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-de-Oliva-Talliani-Botella-1-L\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/179729/1509542.jpg",
+                        "imageText": "Aceite-de-Oliva-Talliani-Botella-1-L"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=1489&qty=1&seller=1&sc=1&price=689000&cv=62804e2b6c6bcb67d69c50107daf5913_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 6890,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 6890,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 6890,
+                            "ListPrice": 6890,
+                            "PriceWithoutDiscount": 6890,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:47.354146Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "62804e2b6c6bcb67d69c50107daf5913_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "10185",
+        "productName": "Aceite de Coco Trianon 120 cc",
+        "brand": "Trianon",
+        "linkText": "aceite-de-coco-trianon-120-cc-2",
+        "productReference": "272752",
+        "categoryId": "344",
+        "clusterHighlights": {},
+        "categories": [
+            "/Perfumería/Cuidado Capilar/Tratamiento Capilar/",
+            "/Perfumería/Cuidado Capilar/",
+            "/Perfumería/"
+        ],
+        "categoriesIds": [
+            "/293/331/344/",
+            "/293/331/",
+            "/293/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-de-coco-trianon-120-cc-2/p",
+        "ProductData": [
+            "{\"ref_id\":\"272752\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Trianon\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.12,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"10436\":{\"ref_id\":\"272752\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.12,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Encuentra lo mejor en Jumbo.cl",
+        "items": [
+            {
+                "itemId": "10436",
+                "name": "Aceite de Coco Trianon 120 cc",
+                "nameComplete": "Aceite de Coco Trianon 120 cc",
+                "complementName": "",
+                "ean": "7804990001527",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "272752"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "187573",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/187573-#width#-#height#/272752.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-de-Coco-Trianon-120-cc\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/187573/272752.jpg",
+                        "imageText": "Aceite-de-Coco-Trianon-120-cc"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=10436&qty=1&seller=1&sc=1&price=379000&cv=08b02fc967e86f352e97efcd4943e662_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 3790,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 3790,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 3790,
+                            "ListPrice": 3790,
+                            "PriceWithoutDiscount": 3790,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:50.1778896Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "08b02fc967e86f352e97efcd4943e662_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "9607",
+        "productName": "Aceite de Rosa Mosqueta Coesam 15 ml",
+        "brand": "Coesam",
+        "linkText": "aceite-de-rosa-mosqueta-coesam-15-ml",
+        "productReference": "1447098",
+        "categoryId": "393",
+        "clusterHighlights": {},
+        "categories": [
+            "/Perfumería/Cremas/Faciales/",
+            "/Perfumería/Cremas/",
+            "/Perfumería/"
+        ],
+        "categoriesIds": [
+            "/293/390/393/",
+            "/293/390/",
+            "/293/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-de-rosa-mosqueta-coesam-15-ml/p",
+        "ProductData": [
+            "{\"ref_id\":\"1447098\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Coesam\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"un\",\"unit_multiplier_un\":1,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"9833\":{\"ref_id\":\"1447098\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"un\",\"unit_multiplier_un\":1,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Encuentra lo mejor en Jumbo.cl",
+        "items": [
+            {
+                "itemId": "9833",
+                "name": "Aceite de Rosa Mosqueta Coesam 15 ml",
+                "nameComplete": "Aceite de Rosa Mosqueta Coesam 15 ml",
+                "complementName": "",
+                "ean": "7804952204034",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "1447098"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "186977",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/186977-#width#-#height#/1447098.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-de-Rosa-Mosqueta-Coesam-15-ml\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/186977/1447098.jpg",
+                        "imageText": "Aceite-de-Rosa-Mosqueta-Coesam-15-ml"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=9833&qty=1&seller=1&sc=1&price=449000&cv=e296ca8c49fdb0282a66c45f17a4ced4_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 4490,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 4490,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 4490,
+                            "ListPrice": 4490,
+                            "PriceWithoutDiscount": 4490,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:48.5831313Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "e296ca8c49fdb0282a66c45f17a4ced4_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "9334",
+        "productName": "Aceite Natal Antiestrías Fyo 125 ml",
+        "brand": "Fyo",
+        "linkText": "aceite-natal-antiestrias-fyo-125-ml",
+        "productReference": "1470672",
+        "categoryId": "396",
+        "clusterHighlights": {},
+        "categories": [
+            "/Perfumería/Cremas/Corporales/",
+            "/Perfumería/Cremas/",
+            "/Perfumería/"
+        ],
+        "categoriesIds": [
+            "/293/390/396/",
+            "/293/390/",
+            "/293/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-natal-antiestrias-fyo-125-ml/p",
+        "ProductData": [
+            "{\"ref_id\":\"1470672\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Fyo\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"UN\",\"unit_multiplier_un\":0.125,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"9542\":{\"ref_id\":\"1470672\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"UN\",\"unit_multiplier_un\":0.125,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Encuentra lo mejor en Jumbo.cl",
+        "items": [
+            {
+                "itemId": "9542",
+                "name": "Aceite Natal Antiestrías Fyo 125 ml",
+                "nameComplete": "Aceite Natal Antiestrías Fyo 125 ml",
+                "complementName": "",
+                "ean": "7804902027331",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "1470672"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "186690",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/186690-#width#-#height#/1470672.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-Natal-Antiestrias-Fyo-125-ml\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/186690/1470672.jpg",
+                        "imageText": "Aceite-Natal-Antiestrias-Fyo-125-ml"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=9542&qty=1&seller=1&sc=1&price=899000&cv=8d56720735a222a631867a1887710602_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 8990,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 8990,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 8990,
+                            "ListPrice": 8990,
+                            "PriceWithoutDiscount": 8990,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:49.5107402Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "8d56720735a222a631867a1887710602_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "8684",
+        "productName": "Aceite para Bebés y Niños Simond's 210 cc",
+        "brand": "Simond's",
+        "linkText": "aceite-para-bebes-y-ninos-simonds-210-cc-baby-2",
+        "productReference": "272751",
+        "categoryId": "391",
+        "clusterHighlights": {},
+        "categories": [
+            "/Mi bebé/Perfumería Infantil/",
+            "/Mi bebé/"
+        ],
+        "categoriesIds": [
+            "/382/391/",
+            "/382/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-para-bebes-y-ninos-simonds-210-cc-baby-2/p",
+        "ProductData": [
+            "{\"ref_id\":\"272751\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Simond's\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.21,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"8881\":{\"ref_id\":\"272751\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.21,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "Baby Products, Sin perfume, Hipoalergénico",
+        "items": [
+            {
+                "itemId": "8881",
+                "name": "Aceite para Bebés y Niños Simond's 210 cc",
+                "nameComplete": "Aceite para Bebés y Niños Simond's 210 cc",
+                "complementName": "",
+                "ean": "7804945001329",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "272751"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "186162",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/186162-#width#-#height#/272751.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-para-Bebes-y-Niños-Simond-s-210-cc\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/186162/272751.jpg",
+                        "imageText": "Aceite-para-Bebes-y-Niños-Simond-s-210-cc"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=8881&qty=1&seller=1&sc=1&price=239000&cv=9d3474fe26acd791eb8e3858b05a9b7f_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 2390,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 2390,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 2390,
+                            "ListPrice": 2390,
+                            "PriceWithoutDiscount": 2390,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:49.6836538Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "9d3474fe26acd791eb8e3858b05a9b7f_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "productId": "8683",
+        "productName": "Aceite Emulsionado Simond's 650 ml",
+        "brand": "Simond's",
+        "linkText": "aceite-emulsionado-simonds-650-ml-2",
+        "productReference": "272748",
+        "categoryId": "391",
+        "clusterHighlights": {},
+        "categories": [
+            "/Mi bebé/Perfumería Infantil/",
+            "/Mi bebé/"
+        ],
+        "categoriesIds": [
+            "/382/391/",
+            "/382/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/aceite-emulsionado-simonds-650-ml-2/p",
+        "ProductData": [
+            "{\"ref_id\":\"272748\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Simond's\",\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.65,\"measurement_unit_selector\":false}"
+        ],
+        "SkuData": [
+            "{\"8880\":{\"ref_id\":\"272748\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"un\",\"unit_multiplier\":1,\"promotions\":[],\"measurement_unit_un\":\"Lt\",\"unit_multiplier_un\":0.65,\"measurement_unit_selector\":false}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "SkuData"
+        ],
+        "description": "",
+        "items": [
+            {
+                "itemId": "8880",
+                "name": "Aceite Emulsionado Simond's 650 ml",
+                "nameComplete": "Aceite Emulsionado Simond's 650 ml",
+                "complementName": "",
+                "ean": "7804945001435",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "272748"
+                    }
+                ],
+                "measurementUnit": "un",
+                "unitMultiplier": 1,
+                "images": [
+                    {
+                        "imageId": "186161",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/186161-#width#-#height#/272748.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Aceite-Emulsionado-Simond-s-650-ml\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/186161/272748.jpg",
+                        "imageText": "Aceite-Emulsionado-Simond-s-650-ml"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=8880&qty=1&seller=1&sc=1&price=299000&cv=b195d8495d5d7cbdb44216fd042014b3_geral:6C281D7FB15570359358A49996AE4562&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 2990,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 2990,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 2990,
+                            "ListPrice": 2990,
+                            "PriceWithoutDiscount": 2990,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-06-20T20:57:50.0868796Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "b195d8495d5d7cbdb44216fd042014b3_geral:6C281D7FB15570359358A49996AE4562"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

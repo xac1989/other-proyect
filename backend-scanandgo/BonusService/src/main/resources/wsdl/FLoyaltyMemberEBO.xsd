@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://xmlns.cencosud.corp/Loyalty/Core/EBO/LoyaltyMember" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://xmlns.cencosud.corp/Loyalty/Core/EBO/LoyaltyMember" xmlns:comm="http://xmlns.cencosud.corp/Loyalty/LoyCommonTypes">
+
+	<xs:import namespace="http://xmlns.cencosud.corp/Loyalty/LoyCommonTypes" schemaLocation="FLoyCommonTypes.xsd"/>
+
+	<xs:complexType name="AnswerType">
+		<xs:sequence>
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="value" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ListOfAnswerType">
+		<xs:sequence>
+			<xs:element name="Answer" type="tns:AnswerType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="StringValidType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="isValid" use="optional" type="xs:boolean"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+
+	<xs:complexType name="MemberType">
+		<xs:sequence>
+			<xs:element name="EnrolmentChannel" maxOccurs="1" minOccurs="0"> 
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Batch"/>
+						<xs:enumeration value="POS"/>
+						<xs:enumeration value="Portal"/>
+						<xs:enumeration value="MSR"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EnrolmentLocation" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="isParent" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="ParentMemberId" type="comm:MemberIdentifierType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Name" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="LastName" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="LastName2" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="MemberId" type="comm:MemberIdentifierType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Email" type="tns:StringValidType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="BirthDate" type="xs:date" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Password" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Gender" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="MobilePhone" type="tns:StringValidType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="HomePhone" type="tns:StringValidType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="MobilePhone2" type="tns:StringValidType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="ComercialPhone" type="tns:StringValidType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="MaritalStatus" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="PreferedPhone" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="RedeemPermissions" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Status" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="SubStatus" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Address" type="comm:AddressType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Points" type="xs:integer" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="AcceptedTC" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Segment" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Segment1" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="ValidationPending" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="AdditionalProfileMember" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="MemberPreferencesType">
+		<xs:sequence>
+			<xs:element name="CouldBeContacted" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="ContactedForMarketResearch" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="ContactedByEMail" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="ContactByPhone" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="ContactByMail" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="NoRestrictionInfo" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="MemberSurveyType">
+		<xs:sequence>
+			<xs:element name="NumberOfPeopleAtHome" type="xs:integer" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="NumberOfChildren" type="xs:integer" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="AgeOfChild1" type="xs:integer" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="AgeOfChild2" type="xs:integer" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="AgeOfChild3" type="xs:integer" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="AgeOfChild4" type="xs:integer" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="CreditCardMostUsed" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="PetrolStationMostUsed" type="tns:ListOfAnswerType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="AmountSpendedOnGasolineMonth" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="MobileCompanyUsed" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="PreferedPharmacy" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="PreferredSupermarket" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="OtherLoyaltyPrograms" type="tns:ListOfAnswerType" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="RegularNewspaper" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="StudiesLevel" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Home" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="PhoneTypeContract" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="CategoryOfOwnCompany" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="NumberOfCars" type="xs:integer" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="BirthYearChild1" type="xs:date" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="BirthYearChild2" type="xs:date" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="BirthYearChild3" type="xs:date" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="BirthYearChild4" type="xs:date" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="AdditionalMemberFor" type="xs:string" maxOccurs="1" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="LoyaltyMemberFullType">
+		<xs:sequence>
+			<xs:element name="LoyaltyMember" type="tns:MemberType"/>
+			<xs:element name="MemberPreferences" type="tns:MemberPreferencesType" minOccurs="0"/>
+			<xs:element name="MemberSurvey" type="tns:MemberSurveyType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="LoyaltyMemberType">
+		<xs:sequence>
+			<xs:element name="LoyaltyMember" type="tns:MemberType"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,94 @@
+vtex:
+  util:
+    schema: http
+    url: "api.vtexcrm.com.br/jumbochilehomolog"
+    port: "80"
+    apiKey: "vtexappkey-jumbochilehomolog-IAMKWV"
+    apiSecret: "RSRVBUIUVTMVEPPXIRIWPYWEIYSJQHSTWYPASGFFFRASOZDBBYCGWOYTWMNDBYENASZFAOFCMCRXXEPJURHREMXHAWEFSBDGNMRWZYBNTZTTWBVSWDJKQMJOVRFDKZJK"
+  r1:
+    schema: http
+    url: "wongqa.vtexcommercestable.com.br"
+    port: "80"
+    apiKey: "g.granados@globant.com"
+    apiSecret: "Hombrehojalata_2"
+  r2:
+    schema: http
+    url: "jumbochilehomolog.vtexcommercestable.com.br"
+    port: "80"
+    apiKey: "gabriel.rodriguez@globant.com"
+    apiSecret: "Cencodev1"
+    business:
+      promotionKeys: {t-cenco: "cencoCard", cencosud: "cencoCard", otros-medios: "otherPayments", -: "info", info: "info"}
+      promotionTypes: {p: "percentage", n: "nominal", m: "maximumUnitPrice"}
+      promotionTitles: {discount: "{1}% Dcto.", mx: "{1}x", mxn: "{1}x{2}", deal: "Precio Oferta", nominal: "{1}$ de dcto."}
+      promotionColors: {cencoCard: "#EC1164",  otherPayments: "#008F23", info: ""}
+      sourcesBaseURL: https://cencodev-catalog-service.mybluemix.net/images/     
+      highlights:
+         - "flag_descuento_10pc"
+         - "flag_descuento_11pc"
+         - "flag_descuento_12pc"
+         - "flag_descuento_15pc"
+         - "flag_descuento_16pc"
+         - "flag_descuento_20pc"
+         - "flag_descuento_25pc"
+         - "flag_descuento_29pc"
+         - "flag_descuento_30pc"
+         - "flag_descuento_35pc"
+         - "flag_descuento_40pc"
+         - "flag_descuento_50pc"
+         - "flag_descuento_5pc"
+         - "descuento_cencosud"
+         - "flag_acumula_bono_puntos"
+         - "flag_big_size"
+         - "flag_come_libre"
+         - "flag_descuento_10x"
+         - "flag_descuento_10x8"
+         - "flag_descuento_12x"
+         - "flag_descuento_12x10"
+         - "flag_descuento_12x8"
+         - "flag_descuento_2x"
+         - "flag_descuento_2x1"
+         - "flag_descuento_3x"
+         - "flag_descuento_3x2"
+         - "flag_descuento_4x"
+         - "flag_descuento_4x3"
+         - "flag_descuento_5x"
+         - "flag_descuento_5x4"
+         - "flag_descuento_6x"
+         - "flag_descuento_6x5"
+         - "flag_descuento_7x"
+         - "flag_descuento_7x5"
+         - "flag_descuento_8x"
+         - "flag_descuento_8x6"
+         - "flag_descuento_9x"
+         - "flag_descuento_cencosud"
+         - "flag_despacho_1"
+         - "flag_exclusivo_jumbo_cl"
+         - "flag_jumbo_artesanal"
+         - "flag_libre_de_alergenos_comunes"
+         - "flag_libre_de_azucar_anadida"
+         - "flag_libre_de_gluten"
+         - "flag_libre_de_lactosa"
+         - "flag_oferta"
+         - "flag_organicos"
+         - "flag_producto_exclusivo"
+         - "flag_producto_jumbo"
+         - "flag_producto_nuevo"
+         - "flag_super_pack"
+         - "flag_vegano"
+         - "flag_vive_sabores"
+      dealsParameter: 136
+
+security:
+  require-ssl: false
+  user:
+    name: cencoappuser
+    password: HjztW7dQL7Y8XJ5cZbpfgMHb
+    
+promotion:
+  schedule: "0 0/1 * * * ?"
+        
+endpoints:
+    enabled: false
+    health:
+        enabled: true

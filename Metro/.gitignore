@@ -1,0 +1,9 @@
+/.settings/*
+/.classpath
+/.elasticbeanstalk/*
+/.factorypath
+/.project
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

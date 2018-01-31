@@ -1,0 +1,129 @@
+swagger: '2.0'
+info:
+  x-ibm-name: chaordic
+  title: Chaordic
+  version: 1.0.0-RC
+schemes:
+  - https
+host: $(catalog.host)
+basePath: /chaordic
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  clientSecretHeader:
+    type: apiKey
+    description: ''
+    in: header
+    name: X-IBM-Client-Secret
+  clientIdHeader:
+    type: apiKey
+    in: header
+    name: X-IBM-Client-Id
+security:
+  - clientIdHeader: []
+    clientSecretHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+      - set-variable:
+          title: set-variable
+          actions:
+            - set: message.body
+              value: "{\\\"recommendations\\\":[{\\\"productName\\\":\\\"Black & Decker Freidora de Aire PuriFry Blanco\\\",\\\"productId\\\":\\\"2000592\\\",\\\"images\\\":{\\\"300x300\\\":\\\"\\/arquivos\\/ids\\/176884-300-300\\/Black-and-Decker-Freidora-de-Aire-PuriFry-Blanco-wong-544632.jpg\\\",\\\"90x90\\\":\\\"\\/arquivos\\/ids\\/176884-90-90\\/Black-and-Decker-Freidora-de-Aire-PuriFry-Blanco-wong-544632.jpg\\\",\\\"1000x1000\\\":\\\"\\/arquivos\\/ids\\/176884-1000-1000\\/Black-and-Decker-Freidora-de-Aire-PuriFry-Blanco-wong-544632.jpg\\\",\\\"65x65\\\":\\\"\\/arquivos\\/ids\\/176884-65-65\\/Black-and-Decker-Freidora-de-Aire-PuriFry-Blanco-wong-544632.jpg\\\",\\\"55x55\\\":\\\"\\/arquivos\\/ids\\/176884-55-55\\/Black-and-Decker-Freidora-de-Aire-PuriFry-Blanco-wong-544632.jpg\\\",\\\"292x292\\\":\\\"\\/arquivos\\/ids\\/176884-292-292\\/Black-and-Decker-Freidora-de-Aire-PuriFry-Blanco-wong-544632.jpg\\\"},\\\"price\\\":1799,\\\"listPrice\\\":2399,\\\"discountRate\\\":25,\\\"available\\\":true},{\\\"productName\\\":\\\"Samsung Lavaseca 9Kg\\/5Kg  WD90J6410AW\\/PE Blanco\\\",\\\"productId\\\":\\\"2000017\\\",\\\"images\\\":{\\\"1000x1000\\\":\\\"\\/arquivos\\/ids\\/171658-1000-1000\\/Samsung-Lavaseca-9Kg-5Kg-WD90J6410AW-PE-Blanco-wong-506729.jpg\\\",\\\"template-171660\\\":\\\"\\/arquivos\\/ids\\/171660-#width-#height\\/Samsung-Lavaseca-9Kg-5Kg-WD90J6410AW-PE-Blanco-wong-506729_2.jpg\\\",\\\"template-171661\\\":\\\"\\/arquivos\\/ids\\/171661-#width-#height\\/Samsung-Lavaseca-9Kg-5Kg-WD90J6410AW-PE-Blanco-wong-506729_3.jpg\\\",\\\"200x200\\\":\\\"\\/arquivos\\/ids\\/171658-200-200\\/Samsung-Lavaseca-9Kg-5Kg-WD90J6410AW-PE-Blanco-wong-506729.jpg\\\",\\\"template-171659\\\":\\\"\\/arquivos\\/ids\\/171659-#width-#height\\/Samsung-Lavaseca-9Kg-5Kg-WD90J6410AW-PE-Blanco-wong-506729_1.jpg\\\",\\\"template\\\":\\\"\\/arquivos\\/ids\\/171658-#width-#height\\/Samsung-Lavaseca-9Kg-5Kg-WD90J6410AW-PE-Blanco-wong-506729.jpg\\\",\\\"template-171662\\\":\\\"\\/arquivos\\/ids\\/171662-#width-#height\\/Samsung-Lavaseca-9Kg-5Kg-WD90J6410AW-PE-Blanco-wong-506729_4.jpg\\\",\\\"400x400\\\":\\\"\\/arquivos\\/ids\\/171658-400-400\\/Samsung-Lavaseca-9Kg-5Kg-WD90J6410AW-PE-Blanco-wong-506729.jpg\\\"},\\\"price\\\":1799,\\\"listPrice\\\":2399,\\\"discountRate\\\":25,\\\"available\\\":true}],\\\"metadata\\\":{\\\"requestTime\\\":\\\"Thu, 22 Dec 2016 20:18:03 Z\\\",\\\"region\\\":\\\"r1\\\",\\\"version\\\":\\\"v1\\\"}}"
+            - set: message.status.code
+              value: '200'
+            - set: message.headers.content-type
+              value: application/json
+    catch: []
+  phase: realized
+paths:
+  /recommendations:
+    get:
+      responses:
+        '200':
+          description: 200 OK
+      parameters:
+        - name: type
+          type: string
+          required: true
+          in: query
+          description: 'Recomendation type: Similar, FrequentlyBoughtTogether, EndedUpBuying, BestSellers, MostVisited, Trending'
+        - name: productId
+          type: array
+          required: false
+          in: query
+          description: Product identification
+          items:
+            type: string
+        - name: categoryId
+          type: array
+          required: false
+          in: query
+          description: Category identification
+          items:
+            type: string
+        - name: tagId
+          type: array
+          required: false
+          in: query
+          description: Tag Identification
+          items:
+            type: string
+        - name: deviceId
+          type: string
+          required: false
+          in: query
+          description: Device Identification
+        - name: userId
+          type: string
+          required: false
+          in: query
+          description: User identification
+        - name: useBoughtProducts
+          type: string
+          required: false
+          in: query
+          description: Use bought products flag
+        - name: useCartProducts
+          type: string
+          required: false
+          in: query
+          description: Use cart products flag
+        - name: useVisitedProducts
+          type: string
+          required: false
+          in: query
+          description: Use visited products flag
+        - name: size
+          type: integer
+          required: false
+          in: query
+          description: Elements size
+          format: int32
+definitions:
+  metadata:
+    properties:
+      results:
+        type: string
+        description: Total Items
+        example: '10'
+      requestTime:
+        type: string
+        description: Api Request Time
+        example: 'Thu, 24 Nov 2016 15:17:32 Z'
+      region:
+        type: string
+        description: API Region
+        example: r1
+      version:
+        type: string
+        description: API Version
+        example: v1
+    additionalProperties: false
+tags: []

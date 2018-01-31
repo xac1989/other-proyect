@@ -1,0 +1,10 @@
+---
+applications:
+- name: cencodev-user-registration-service
+  memory: 512M
+  host: cencodev-user-registration-service
+  domain: mybluemix.net
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+  services:
+  - availability-monitoring-auto

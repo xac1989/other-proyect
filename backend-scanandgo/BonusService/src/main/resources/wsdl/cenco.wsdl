@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions name="LoyaltyMemberEBS" targetNamespace="http://xmlns.cencosud.corp/Loyalty/Core/EBS/LoyaltyMember" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember" xmlns:WL5G3N2="http://xmlns.cencosud.corp/Loyalty/Core/EBS/LoyaltyMember" xmlns:WL5G3N3="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:ebm="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember" xmlns:ebs="http://xmlns.cencosud.corp/Loyalty/Core/EBS/LoyaltyMember" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember" schemaLocation="FLoyaltyMemberEBM.xsd"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="QueryLoyaltyMemberReqMsg">
+    <WL5G3N0:part element="WL5G3N1:QueryLoyaltyMemberRequestEBM" name="QueryLoyaltyMemberEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="QueryLoyaltyMemberRespMsg">
+    <WL5G3N0:part element="WL5G3N1:QueryLoyaltyMemberResponseEBM" name="QueryLoyaltyResponseEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="QueryLoyaltyMemberFullReqMsg">
+    <WL5G3N0:part element="WL5G3N1:QueryLoyaltyMemberFullRequestEBM" name="QueryLoyaltyMemberFullEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="QueryLoyaltyMemberFullRespMsg">
+    <WL5G3N0:part element="WL5G3N1:QueryLoyaltyMemberFullResponseEBM" name="QueryLoyaltyMemberFullResponseEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="QueryMemberSegmentsReqMsg">
+    <WL5G3N0:part element="WL5G3N1:QueryMemberSegmentsRequestEBM" name="QueryMemberSegmentsEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="QueryMemberSegmentsRespMsg">
+    <WL5G3N0:part element="WL5G3N1:QueryMemberSegmentsResponseEBM" name="QueryMemberSegmentsResponseEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="EnrolLoyaltyMemberReqMsg">
+    <WL5G3N0:part element="WL5G3N1:EnrolLoyaltyMemberRequestEBM" name="EnrolLoyaltyMemberEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="EnrolLoyaltyMemberRespMsg">
+    <WL5G3N0:part element="WL5G3N1:EnrolLoyaltyMemberResponseEBM" name="EnrolLoyaltyMemberResponseEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="UpdateLoyaltyMemberReqMsg">
+    <WL5G3N0:part element="WL5G3N1:UpdateLoyaltyMemberRequestEBM" name="UpdateLoyaltyMemberEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="UpdateLoyaltyMemberRespMsg">
+    <WL5G3N0:part element="WL5G3N1:UpdateLoyaltyMemberResponseEBM" name="UpdateLoyaltyMemberResponseEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="QueryLoyaltyMemberIdByDNIReqMsg">
+    <WL5G3N0:part element="WL5G3N1:QueryLoyaltyMemberIdByDNIRequestEBM" name="QueryLoyaltyMemberIdByDNIEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="QueryLoyaltyMemberIdByDNIRespMsg">
+    <WL5G3N0:part element="WL5G3N1:QueryLoyaltyMemberIdByDNIResponseEBM" name="QueryLoyaltyMemberIdByDNIResponseEBM"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="LoyaltyMemberEBS">
+    <WL5G3N0:operation name="QueryLoyaltyMember">
+      <WL5G3N0:input message="WL5G3N2:QueryLoyaltyMemberReqMsg"/>
+      <WL5G3N0:output message="WL5G3N2:QueryLoyaltyMemberRespMsg"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="QueryLoyaltyMemberFull">
+      <WL5G3N0:input message="WL5G3N2:QueryLoyaltyMemberFullReqMsg"/>
+      <WL5G3N0:output message="WL5G3N2:QueryLoyaltyMemberFullRespMsg"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="QueryMemberSegments">
+      <WL5G3N0:input message="WL5G3N2:QueryMemberSegmentsReqMsg"/>
+      <WL5G3N0:output message="WL5G3N2:QueryMemberSegmentsRespMsg"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EnrolLoyaltyMember">
+      <WL5G3N0:input message="WL5G3N2:EnrolLoyaltyMemberReqMsg"/>
+      <WL5G3N0:output message="WL5G3N2:EnrolLoyaltyMemberRespMsg"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="UpdateLoyaltyMember">
+      <WL5G3N0:input message="WL5G3N2:UpdateLoyaltyMemberReqMsg"/>
+      <WL5G3N0:output message="WL5G3N2:UpdateLoyaltyMemberRespMsg"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="QueryLoyaltyMemberIdByDNI">
+      <WL5G3N0:input message="WL5G3N2:QueryLoyaltyMemberIdByDNIReqMsg"/>
+      <WL5G3N0:output message="WL5G3N2:QueryLoyaltyMemberIdByDNIRespMsg"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="LoyaltyMemberEBSBinding" type="WL5G3N2:LoyaltyMemberEBS">
+    <WL5G3N3:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="QueryLoyaltyMember">
+      <WL5G3N3:operation soapAction="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember/EBS/QueryLoyaltyMember"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="QueryLoyaltyMemberFull">
+      <WL5G3N3:operation soapAction="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember/EBS/QueryLoyaltyMembeFull"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="QueryMemberSegments">
+      <WL5G3N3:operation soapAction="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember/EBS/QueryMemberSegments"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="EnrolLoyaltyMember">
+      <WL5G3N3:operation soapAction="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember/EBS/EnrolLoyaltyMember"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="UpdateLoyaltyMember">
+      <WL5G3N3:operation soapAction="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember/EBS/UpdateLoyaltyMember"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="QueryLoyaltyMemberIdByDNI">
+      <WL5G3N3:operation soapAction="http://xmlns.cencosud.corp/Loyalty/Core/EBM/LoyaltyMember/EBS/QueryLoyaltyMemberIdByDNI"/>
+      <WL5G3N0:input>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N3:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="LoyaltyMemberEBSBindingQSService">
+    <WL5G3N0:port binding="WL5G3N2:LoyaltyMemberEBSBinding" name="LoyaltyMemberEBSBindingQSPort">
+      <WL5G3N3:address location="https://cap-sg-prd-3.integration.ibmcloud.com:15172/LOY/Member/LoyaltyMember"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

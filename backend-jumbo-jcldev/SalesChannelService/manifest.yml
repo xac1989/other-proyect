@@ -1,0 +1,8 @@
+---
+applications:
+- name: cencodev-saleschannel-service
+  memory: 512M
+  host: cencodev-saleschannel-service
+  domain: mybluemix.net
+  env:
+    SPRING_PROFILES_ACTIVE: dev

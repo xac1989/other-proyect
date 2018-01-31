@@ -1,0 +1,7 @@
+{
+	"modelPackage" 	: "com.cencosud.mobile.recommendations.model",
+	"apiPackage" 	: "com.cencosud.mobile.recommendations.adapter",
+	"additionalProperties" : {
+		"autowiredSpringService"  : "true"
+	}
+}

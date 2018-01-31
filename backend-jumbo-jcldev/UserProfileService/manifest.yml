@@ -1,0 +1,11 @@
+---
+applications:
+- name: cencodev-user-profile-service
+  memory: 512M
+  host: cencodev-user-profile-service
+  domain: mybluemix.net
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+  services:
+  - availability-monitoring-auto
+  - Compose for MongoDB-h5

@@ -1,0 +1,23 @@
+vtex:
+  schema: http
+  url: "jumbochilehomolog.vtexcommercestable.com.br"
+  port: "80"
+  apiKey: "vtexappkey-jumbochilehomolog-IAMKWV"
+  apiSecret: "RSRVBUIUVTMVEPPXIRIWPYWEIYSJQHSTWYPASGFFFRASOZDBBYCGWOYTWMNDBYENASZFAOFCMCRXXEPJURHREMXHAWEFSBDGNMRWZYBNTZTTWBVSWDJKQMJOVRFDKZJK"
+mongoConfig:
+  database: "product"
+security:
+  user:
+    name: cencoappuser
+    password: HjztW7dQL7Y8XJ5cZbpfgMHb
+sftpConfig:
+  url: "169.46.145.14"
+  username: "cencouser"
+  password: "cencopass"
+  pathEntrada: "data/entrada/"
+  pathSalida: "data/salida/"
+  pathError: "data/error/"  
+  port: 22
+  schedule: "0 0/5 * * * ?"
+selloConfig:
+  pathArchivo: "/home/xxx/Downloads/scango/Carga inicial - Ley Etiquetado.csv"

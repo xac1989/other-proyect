@@ -1,0 +1,186 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "orders"
+  title: "Orders"
+  version: "1.0.0-RC"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/orders/r1/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  x-ibm-client-secret:
+    type: "apiKey"
+    description: ""
+    in: "header"
+    name: "X-IBM-Client-Secret"
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+  x-ibm-client-secret: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - set-variable:
+        title: "set-api-variables"
+        actions:
+        - value: "v1"
+          add: "api_version"
+        - value: "r1"
+          add: "api_region"
+    - set-variable:
+        title: "set-credentials"
+        actions:
+        - value: "cencoappuser"
+          add: "api_user"
+        - value: "HjztW7dQL7Y8XJ5cZbpfgMHb"
+          add: "api_pass"
+    - set-variable:
+        title: "set-base-url and path"
+        actions:
+        - value: "https://cencouat-order-service.mybluemix.net"
+          add: "base-url"
+        - set: "service-path"
+          value: "/order/search"
+    - operation-switch:
+        title: "operation-switch"
+        case:
+        - operations:
+          - verb: "get"
+            path: "/orders/search"
+          execute:
+          - invoke:
+              target-url: "$(base-url)$(service-path)?email=$(request.parameters.email)"
+              verb: "GET"
+          - if:
+              title: "if"
+              condition: "$(message.status.code) !== 200 && $(message.status.code)\
+                \ !== 206"
+              execute:
+              - gatewayscript:
+                  title: "gatewayscript"
+                  source: "\nvar info = '';\nvar nodeList = apim.getvariable('message.body')\n\
+                    \napim.error('MyError', $(message.status.code), '$(message.status.reason)',\
+                    \ nodeList);"
+          - map:
+              title: "map"
+              inputs: {}
+              outputs:
+                output:
+                  schema:
+                    $ref: "#/definitions/ordersResponse"
+                  variable: "message.body"
+                  content: "application/json"
+              actions:
+              - set: "output.orders"
+                default: "$(message.body)"
+              - set: "output.metadata.requestTime"
+                default: "$(request.date)"
+              - set: "output.metadata.region"
+                default: "$(api_region)"
+              - set: "output.metadata.version"
+                default: "$(api_version)"
+              - set: "output.metadata.results"
+                default: "$(message.body.length)"
+        - operations:
+          - verb: "get"
+            path: "/order/{orderId}"
+          execute:
+          - invoke:
+              title: "invoke"
+              timeout: 60
+              verb: "GET"
+              cache-response: "protocol"
+              cache-ttl: 900
+              stop-on-error:
+              - null
+              target-url: "$(base-url)/order/$(request.parameters.orderId)"
+          - map:
+              title: "map"
+              inputs: {}
+              outputs:
+                output:
+                  schema:
+                    $ref: "#/definitions/order"
+                  variable: "message.body"
+              actions:
+              - set: "output.metadata.requestTime"
+                default: "$(request.date)"
+              - set: "output.metadata.region"
+                default: "$(api_region)"
+              - set: "output.metadata.version"
+                default: "$(api_version)"
+              - set: "output.order"
+                default: "$(message.body)"
+        otherwise: []
+  phase: "realized"
+paths:
+  /order/{orderId}:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+    parameters:
+    - name: "orderId"
+      type: "string"
+      required: true
+      in: "path"
+      description: "Order Id"
+  /orders/search:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+    parameters:
+    - name: "email"
+      type: "string"
+      required: true
+      in: "query"
+tags: []
+definitions:
+  order:
+    properties:
+      order:
+        type: "object"
+      metadata:
+        $ref: "#/definitions/metadata"
+    additionalProperties: false
+  ordersResponse:
+    properties:
+      orders:
+        type: "object"
+        description: "Order array"
+      metadata:
+        $ref: "#/definitions/metadata"
+    additionalProperties: false
+  metadata:
+    properties:
+      results:
+        type: "string"
+        description: "Total Items"
+        example: "10"
+      requestTime:
+        type: "string"
+        description: "Api Request Time"
+        example: "Thu, 24 Nov 2016 15:17:32 Z"
+      region:
+        type: "string"
+        description: "API Region"
+        example: "r1"
+      version:
+        type: "string"
+        description: "API Version"
+        example: "v1"
+    additionalProperties: false
+    description: "Api metadata"

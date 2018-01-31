@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.cencosud.mobile.order.util.RestServiceUtil" id="restServiceUtil">
+        <property name="apiBaseUrl" value="${api_base_url}"/>
+        <property name="apiClientId" value="${api_client_id}"/>
+        <property name="apiSecret" value="${api_secret}"/>
+    </bean>
+    
+    <bean class="com.cencosud.mobile.order.service.OrderApiServiceImpl">
+		<property name="restServiceUtil" ref="restServiceUtil"/>
+    </bean>
+ 
+    <!-- Define the list of JAX-RS resources to use: -->
+    <bean class="com.github.mfpdev.adapters.spring.integration.JAXRSResourcesRegistryImpl">
+        <property name="resources">
+            <list>
+            	<bean class="com.cencosud.mobile.order.adapter.r1.OrderApiWongV1"/>
+                <bean class="com.cencosud.mobile.order.adapter.r1.OrderApiWongV2"/>
+                <bean class="com.cencosud.mobile.order.adapter.r2.OrderApiJumboV1"/>
+            </list>
+        </property>
+    </bean>
+</beans>

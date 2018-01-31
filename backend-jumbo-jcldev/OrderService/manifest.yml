@@ -1,0 +1,8 @@
+---
+applications:
+- name: cencodev-order-service
+  memory: 512M
+  host: cencodev-order-service
+  domain: mybluemix.net
+  env:
+    SPRING_PROFILES_ACTIVE: dev

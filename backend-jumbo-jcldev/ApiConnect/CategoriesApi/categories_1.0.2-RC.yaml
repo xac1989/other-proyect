@@ -1,0 +1,115 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "categories"
+  title: "Categories"
+  version: "1.0.2-RC"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/categories/r1/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  x-ibm-client-secret:
+    type: "apiKey"
+    description: ""
+    in: "header"
+    name: "X-IBM-Client-Secret"
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+  x-ibm-client-secret: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - set-variable:
+        title: "set-api-variables"
+        actions:
+        - set: "api_version"
+          value: "v1"
+        - set: "api_region"
+          value: "r1"
+    - set-variable:
+        title: "set-credentials"
+        actions:
+        - set: "api_user"
+          value: "cencoappuser"
+        - set: "api_pass"
+          value: "HjztW7dQL7Y8XJ5cZbpfgMHb"
+    - set-variable:
+        title: "set-base-url"
+        actions:
+        - set: "base-url"
+          value: "cencodev-category-service.mybluemix.net"
+    - invoke:
+        target-url: "https://$(base-url)/category-api/category"
+        username: "$(api_user)"
+        password: "$(api_pass)"
+    - map:
+        title: "map"
+        inputs: {}
+        outputs:
+          output:
+            schema:
+              $ref: "#/definitions/categoriesResponse"
+            variable: "message.body"
+            content: "application/json"
+        actions:
+        - set: "output.categories"
+          default: "$(message.body)"
+        - set: "output.metadata.requestTime"
+          default: "$(request.date)"
+        - set: "output.metadata.results"
+          default: "$(message.body.length)"
+        - set: "output.metadata.region"
+          default: "$(api_region)"
+        - set: "output.metadata.version"
+          default: "$(api_version)"
+    catch: []
+  phase: "realized"
+paths:
+  /categories:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+definitions:
+  categoriesResponse:
+    properties:
+      metadata:
+        description: "Api metadata"
+        $ref: "#/definitions/metadata"
+      categories:
+        type: "object"
+        description: "Categories array"
+    additionalProperties: false
+  metadata:
+    properties:
+      results:
+        type: "string"
+        description: "Total Items"
+        example: "10"
+      requestTime:
+        type: "string"
+        description: "Api Request Time"
+        example: "Thu, 24 Nov 2016 15:17:32 Z"
+      region:
+        type: "string"
+        description: "API Region"
+        example: "r1"
+      version:
+        type: "string"
+        description: "API Version"
+        example: "v1"
+    additionalProperties: false
+tags: []

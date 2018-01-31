@@ -1,0 +1,53 @@
+{
+	"id": "fd8b6d04-e147-e906-56c2-c560c1645116",
+	"name": "CSD-TEST-SERVICE-Address copy",
+	"description": "",
+	"order": [
+		"f17ef264-eee5-4e35-ff1f-8b456e56e54d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1506706983281,
+	"owner": "2362265",
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "f17ef264-eee5-4e35-ff1f-8b456e56e54d",
+			"headers": "Authorization: Basic Y2VuY29hcHB1c2VyOkhqenRXN2RRTDdZOFhKNWNaYnBmZ01IYg==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic Y2VuY29hcHB1c2VyOkhqenRXN2RRTDdZOFhKNWNaYnBmZ01IYg==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://cencodev-address-service.mybluemix.net/r2/addresses?profileId=g.granados@globant.com",
+			"queryParams": [
+				{
+					"key": "profileId",
+					"value": "g.granados@globant.com",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": "\r\nvar schema = {\r\n  \"$schema\": \"http://json-schema.org/draft-06/schema#\", \r\n  \"definitions\": {}, \r\n  \"items\": {\r\n    \"properties\": {\r\n      \"addressId\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"addressName\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"addressType\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"city\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"complement\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"country\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"geoCoordinate\": {\r\n        \"properties\": {\r\n          \"latitude\": {\r\n            \"type\": \"number\"\r\n          }, \r\n          \"longitude\": {\r\n            \"type\": \"number\"\r\n          }\r\n        }, \r\n        \"type\": \"object\"\r\n      }, \r\n      \"neighborhood\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"number\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"postalCode\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"receiverName\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"reference\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"state\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"street\": {\r\n        \"type\": \"string\"\r\n      }, \r\n      \"userId\": {\r\n        \"type\": \"string\"\r\n      }\r\n    }, \r\n    \"type\": \"object\"\r\n  }, \r\n  \"type\": \"array\"\r\n};\r\n\r\nvar data = JSON.parse(responseBody);\r\n\r\ntests[\"Status code is 200\"] = responseCode.code === 200;\r\ntests[\"Valid schema\"] = tv4.validate(data, schema);\r\nconsole.log(\"Validation errors: \", tv4.error);\r\n\r\n\r\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508874672855,
+			"name": "GET - Address - DEV",
+			"description": "",
+			"collectionId": "fd8b6d04-e147-e906-56c2-c560c1645116",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,36 @@
+vtex:
+  schema: http
+  url: "wongqa.vtexcommercestable.com.br"
+  port: "80"
+  apiKey: "gabriel.rodriguez@globant.com"
+  apiSecret: "Cencodev1"
+  env: qa
+mongoConfig:
+  database: "categories"
+business:
+  departmentsIds:
+    - "1000012"
+    - "1000008"
+    - "1000009"
+    - "1000007"
+    - "1000011"
+
+  departments:
+    1000012: {id: "1000012", name: "Tecnolog\u00EDa", basicPath: "/tecnologia", order: "0"}
+    1000011: {id: "1000011", name: "Ni\u00F1os y Beb\u00E9s", basicPath: "/niños-y-bebes", order: "4"}
+    1000008: {id: "1000008", name: "Electrodom\u00e9sticos", basicPath: "/electro", order: "1"}
+    1000009: {id: "1000009", name: "Hogar", basicPath: "/hogar", order: "2"}
+    1000007: {id: "1000007", name: "Deportes", basicPath: "/deportes-y-camping", order: "3"}
+
+server:
+  path: "https://cencodev-category-service.mybluemix.net/"
+security:
+  require-ssl: false
+  user:
+    name: cencoappuser
+    password: HjztW7dQL7Y8XJ5cZbpfgMHb
+      
+endpoints:
+    enabled: false
+    health:
+        enabled: true

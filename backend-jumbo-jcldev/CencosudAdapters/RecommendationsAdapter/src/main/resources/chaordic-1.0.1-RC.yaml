@@ -1,0 +1,291 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "chaordic"
+  title: "Chaordic"
+  version: "1.0.1-RC"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/recommendations/r1/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  clientSecretHeader:
+    type: "apiKey"
+    description: ""
+    in: "header"
+    name: "X-IBM-Client-Secret"
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+  clientSecretHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - set-variable:
+        title: "set-api-variables"
+        actions:
+        - set: "api_region"
+          value: "r1"
+        - set: "api_version"
+          value: "v1"
+    - set-variable:
+        title: "set-variable"
+        actions:
+        - set: "base_url_products"
+          value: "http://tienda.wong.com.pe"
+    - invoke:
+        title: "recommendations-chaordic-invoke"
+        timeout: 60
+        verb: "GET"
+        cache-response: "protocol"
+        cache-ttl: 900
+        stop-on-error:
+        - null
+        target-url: "https://recs.chaordicsystems.com/v0/products/recommendations?apiKey=wong&secretKey=N1E%2B1lLZybhosJe4KBKFsA%3D%3D&type=BestSellers&productId[]=$(request.parameters.productId)&categoryId[]=$(request.parameters.categoryId)&tagId[]=$(request.parameters.tagId)&deviceId=$(request.parameters.deviceId)&userId=$(request.parameters.userId)&useBoughtProducts=$(request.parameters.useBoughtProducts)&useCartProducts=$(request.parameters.useCartProducts)&useVisitedProducts=$(request.parameters.useVisitedProducts)&size=$(request.parameters.size)"
+    - gatewayscript:
+        title: "gatewayscript"
+        source: "var displays = apim.getvariable('message.body.displays');\n\n\nvar\
+          \ recommendations = displays[0].recommendations;\n\nfor(var i = 0; i < recommendations.length;\
+          \ i++){\n   recommendations[i].image =  apim.getvariable('base_url_products')\
+          \ + recommendations[i].images['1000x1000'];\n}\n\ndisplays[0].recommendations\
+          \ = recommendations;\n\napim.setvariable('message.body',displays[0], 'set');\n\
+          \n\n\n\n"
+    - map:
+        title: "map"
+        inputs:
+          input:
+            schema:
+              $ref: "#/definitions/responseChaordic"
+            variable: "message.body"
+        outputs:
+          output:
+            schema:
+              $ref: "#/definitions/recommendationsResponse"
+            variable: "message.body"
+        actions:
+        - create: "output.recommendations"
+          foreach: "input.recommendations"
+          from: "input.recommendations"
+          actions:
+          - set: "productName"
+            from: "name"
+          - set: "productId"
+            from: "id"
+          - set: "price"
+            from: "price"
+          - set: "listPrice"
+            from: "oldPrice"
+          - set: "discountRate"
+            from:
+            - "price"
+            - "oldPrice"
+            value: "Math.floor(100-($(price)*100/$(oldPrice)))"
+          - set: "available"
+            from: "status"
+            value: "$(status)==='available'"
+          - set: "image"
+            from: "image"
+        - set: "output.metadata.results"
+          default: "$(message.body.recommendations.length)"
+        - set: "output.metadata.requestTime"
+          default: "$(request.date)"
+        - set: "output.metadata.region"
+          default: "$(api_region)"
+        - set: "output.metadata.version"
+          default: "$(api_version)"
+    catch: []
+  phase: "realized"
+paths:
+  /recommendations:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+      parameters:
+      - name: "type"
+        type: "string"
+        required: true
+        in: "query"
+        description: "Recommendation type: Similar, FrequentlyBoughtTogether, EndedUpBuying,\
+          \ BestSellers, MostVisited, Trending"
+      - name: "productId"
+        type: "array"
+        required: false
+        in: "query"
+        description: "Product identification"
+        items:
+          type: "string"
+      - name: "categoryId"
+        type: "array"
+        required: false
+        in: "query"
+        description: "Category identification"
+        items:
+          type: "string"
+      - name: "tagId"
+        type: "array"
+        required: false
+        in: "query"
+        description: "Tag Identification"
+        items:
+          type: "string"
+      - name: "deviceId"
+        type: "string"
+        required: false
+        in: "query"
+        description: "Device Identification"
+      - name: "userId"
+        type: "string"
+        required: false
+        in: "query"
+        description: "User identification"
+      - name: "useBoughtProducts"
+        type: "string"
+        required: false
+        in: "query"
+        description: "Use bought products flag"
+      - name: "useCartProducts"
+        type: "string"
+        required: false
+        in: "query"
+        description: "Use cart products flag"
+      - name: "useVisitedProducts"
+        type: "string"
+        required: false
+        in: "query"
+        description: "Use visited products flag"
+      - name: "size"
+        type: "integer"
+        required: false
+        in: "query"
+        description: "Elements size"
+        format: "int32"
+definitions:
+  responseChaordic:
+    properties:
+      recommendations:
+        type: "array"
+        description: "Recommendations array"
+        items:
+          $ref: "#/definitions/recommendationChaordic"
+    additionalProperties: false
+  displayChaordic:
+    properties:
+      recommendations:
+        type: "array"
+        items:
+          $ref: "#/definitions/recommendationChaordic"
+        description: "Recommendations array"
+    additionalProperties: false
+  recommendationsResponse:
+    properties:
+      metadata:
+        description: "Response metadata"
+        $ref: "#/definitions/metadata"
+      recommendations:
+        description: "Recommendations list"
+        type: "array"
+        items:
+          $ref: "#/definitions/recommendation"
+    additionalProperties: false
+  recommendation:
+    properties:
+      available:
+        type: "boolean"
+        description: "Available flag"
+        example: true
+      discountRate:
+        type: "number"
+        description: "Discount rate"
+        format: "float"
+        example: 5
+      listPrice:
+        type: "number"
+        description: "List price"
+        example: 4
+        format: "float"
+      price:
+        type: "number"
+        description: "Price"
+        example: 1
+        format: "float"
+      image:
+        type: "string"
+        description: "Product image"
+        example: "http://wong.vteximg.com.br/arquivos/ids/176884-1000-1000/Black-and-Decker-Freidora-de-Aire-PuriFry-Blanco-wong-544632.jpg"
+      productId:
+        type: "string"
+        description: "Product identification"
+        example: "234234"
+      productName:
+        type: "string"
+        description: "Product name"
+        example: "Samsung Lavaseca 9Kg5Kg  WD90J6410AWPE Blanco"
+    additionalProperties: false
+  recommendationChaordic:
+    properties:
+      image:
+        type: "string"
+      status:
+        type: "boolean"
+        description: "Available flag"
+        example: true
+      discountRate:
+        type: "number"
+        description: "Discount rate"
+        format: "float"
+        example: 5
+      oldPrice:
+        type: "number"
+        description: "List price"
+        example: 4
+        format: "float"
+      price:
+        type: "number"
+        description: "Price"
+        example: 1
+        format: "float"
+      images:
+        type: "string"
+        description: "Product image"
+        example: "http://wong.vteximg.com.br/arquivos/ids/176884-1000-1000/Black-and-Decker-Freidora-de-Aire-PuriFry-Blanco-wong-544632.jpg"
+      id:
+        type: "string"
+        description: "Product identification"
+        example: "234234"
+      name:
+        type: "string"
+        description: "Product name"
+        example: "Samsung Lavaseca 9Kg5Kg  WD90J6410AWPE Blanco"
+    additionalProperties: false
+  metadata:
+    properties:
+      results:
+        type: "string"
+        description: "Total Items"
+        example: "10"
+      requestTime:
+        type: "string"
+        description: "Api Request Time"
+        example: "Thu, 24 Nov 2016 15:17:32 Z"
+      region:
+        type: "string"
+        description: "API Region"
+        example: "r1"
+      version:
+        type: "string"
+        description: "API Version"
+        example: "v1"
+    additionalProperties: false
+tags: []

@@ -1,0 +1,19 @@
+vtex:
+  r1:
+    schema: http
+    url: "wong.vtexcommercestable.com.br"
+    port: "80"
+    apiKey: "vtexappkey-wong-QQJIUC"
+    apiSecret: "ZIOSACOASSPPZBGDWXCAYSJYNZEHEIQIRMNXKJPQUOKOZKZJCWFCHICHYPFAYHWJCGYMNJSMIMGJIVYCAUFICOBIKGYUEOSMRBLSMMVSDSUVCSYDRCZDCOGOFPCHLYIT"
+  r2:
+    schema: http
+    url: "nuevo.jumbo.cl"
+    port: "80"
+    apiKey: "vtexappkey-jumbo-DEYICH"
+    apiSecret: "MWDTHGQLSKANIZPSYXQCXBVNKAYDWNWNLYBFGXQELAHMCSIRPACEDYPKBQIHINPFOMCKXJLBGMQXUILRSGNWKRKMIQDQOJWYLBYPQYTGOBXQISQSFQPBZTUWCQCHFVMX"
+    paymentTicketUrl : "https://escritorio.acepta.com/portalboletas/buscarboletaindex.php?empresa=81201000-K"    
+  
+endpoints:
+    enabled: false
+    health:
+        enabled: true

@@ -1,0 +1,132 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "coupons"
+  title: "Coupons"
+  version: "1.0.1-RC"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/coupons/r1/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  x-ibm-client-secret:
+    type: "apiKey"
+    description: ""
+    in: "header"
+    name: "X-IBM-Client-Secret"
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+  x-ibm-client-secret: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - set-variable:
+        title: "set-api-variables"
+        actions:
+        - value: "r1"
+          add: "api_region"
+        - value: "v1"
+          add: "api_version"
+        version: "1.0.0"
+    - set-variable:
+        title: "set-url-base"
+        actions:
+        - value: "https://cencouat-coupon-service.mybluemix.net"
+          add: "url-base"
+        version: "1.0.0"
+    - set-variable:
+        title: "set-http-credentials"
+        actions:
+        - value: "cencoappuser"
+          add: "http-user"
+        - value: "HjztW7dQL7Y8XJ5cZbpfgMHb"
+          add: "http-pass"
+        version: "1.0.0"
+    - invoke:
+        title: "invoke"
+        timeout: 30
+        verb: "GET"
+        cache-response: "protocol"
+        cache-ttl: 900
+        stop-on-error:
+        - null
+        version: "1.0.0"
+        target-url: "$(url-base)/coupons/$(request.parameters.dni)"
+        username: "$(http-user)"
+        password: "$(http-pass)"
+    - map:
+        title: "map"
+        inputs: {}
+        outputs:
+          output:
+            schema:
+              $ref: "#/definitions/couponsResponse"
+            variable: "message.body"
+        actions:
+        - set: "output.metadata.requestTime"
+          default: "$(request.date)"
+        - set: "output.metadata.region"
+          default: "$(api_region)"
+        - set: "output.metadata.version"
+          default: "$(api_version)"
+        - set: "output.metadata.results"
+          default: "$(message.body.length)"
+        - set: "output.coupons"
+          default: "$(message.body)"
+        version: "1.0.0"
+    catch: []
+  phase: "realized"
+paths:
+  /coupons/{dni}:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+      parameters:
+      - name: "dni"
+        type: "string"
+        required: true
+        in: "path"
+        description: "Customer DNI"
+definitions:
+  couponsResponse:
+    properties:
+      metadata:
+        description: "API metadata"
+        $ref: "#/definitions/metadata"
+      coupons:
+        type: "object"
+        description: "Coupons array"
+    additionalProperties: false
+  metadata:
+    properties:
+      results:
+        type: "string"
+        description: "Total Items"
+        example: "10"
+      requestTime:
+        type: "string"
+        description: "Api Request Time"
+        example: "Thu, 24 Nov 2016 15:17:32 Z"
+      region:
+        type: "string"
+        description: "API Region"
+        example: "r1"
+      version:
+        type: "string"
+        description: "API Version"
+        example: "v1"
+    additionalProperties: false
+tags: []

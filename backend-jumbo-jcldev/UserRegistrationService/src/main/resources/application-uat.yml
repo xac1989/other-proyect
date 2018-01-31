@@ -1,0 +1,25 @@
+vtex:
+  util:
+    schema: http
+    url: "vtexid.vtex.com.br"
+    port: 80
+    apiKey: ""
+    apiSecret: ""
+vtexProfile:
+  util:
+      schema: http
+      url: "jumbo.vtexcommercestable.com.br"
+      port: "80"
+      apiKey: "vtexappkey-jumbo-DEYICH"
+      apiSecret: "MWDTHGQLSKANIZPSYXQCXBVNKAYDWNWNLYBFGXQELAHMCSIRPACEDYPKBQIHINPFOMCKXJLBGMQXUILRSGNWKRKMIQDQOJWYLBYPQYTGOBXQISQSFQPBZTUWCQCHFVMX"
+security:
+  require-ssl: true
+  user:
+    name: cencoappuser
+    password: HjztW7dQL7Y8XJ5cZbpfgMHb
+jumbo:
+  scope: "jumbo"
+endpoints:
+    enabled: false
+    health:
+        enabled: true

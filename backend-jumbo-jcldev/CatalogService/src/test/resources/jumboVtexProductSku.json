@@ -1,0 +1,166 @@
+{
+        "productId": "10731",
+        "productName": "Queso Mantecoso Río Bueno Trozo Granel - Queso Mantecoso Río Bueno Granel",
+        "brand": "Río Bueno",
+        "linkText": "queso-mantecoso-rio-bueno-granel-2",
+        "productReference": "1624073",
+        "categoryId": "86",
+        "clusterHighlights": {},
+        "categories": [
+            "/Quesos y Fiambres/Quesería/Mantecosos y Chanco/",
+            "/Quesos y Fiambres/Quesería/",
+            "/Quesos y Fiambres/"
+        ],
+        "categoriesIds": [
+            "/16/80/86/",
+            "/16/80/",
+            "/16/"
+        ],
+        "link": "https://jumbochilehomolog.vtexcommercestable.com.br/queso-mantecoso-rio-bueno-granel-2/p",
+        "ProductData": [
+            "{\"ref_id\":\"1624073\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"R\\u00edo Bueno\",\"measurement_unit\":\"kg\",\"unit_multiplier\":0.25,\"measurement_unit_un\":\"UN\",\"unit_multiplier_un\":0.25,\"measurement_unit_selector\":false}"
+        ],
+        "Modal 90 minutos": [
+            "No"
+        ],
+        "SkuData": [
+            "{\"10989\":{\"ref_id\":\"1624073-KG\",\"cart_limit\":0,\"allow_notes\":true,\"allow_substitute\":true,\"measurement_unit\":\"kg\",\"unit_multiplier\":0.25,\"promotions\":[],\"measurement_unit_un\":\"UN\",\"unit_multiplier_un\":0.25,\"measurement_unit_selector\":false,\"release_data\":{\"date_release\":\"28-03-2017 11:14\",\"date_release_end\":\"27-04-2017 11:14\",\"is_new\":false}}}"
+        ],
+        "Configuraciones": [
+            "ProductData",
+            "Modal 90 minutos",
+            "SkuData"
+        ],
+        "allSpecifications": [
+            "ProductData",
+            "Modal 90 minutos",
+            "SkuData"
+        ],
+        "description": "",
+        "items": [
+            {
+                "itemId": "10989",
+                "name": "Queso Mantecoso Río Bueno Granel",
+                "nameComplete": "Queso Mantecoso Río Bueno Trozo Granel - Queso Mantecoso Río Bueno Granel Queso Mantecoso Río Bueno Granel",
+                "complementName": "",
+                "ean": "24959414",
+                "referenceId": [
+                    {
+                        "Key": "RefId",
+                        "Value": "1624073-KG"
+                    }
+                ],
+                "measurementUnit": "kg",
+                "unitMultiplier": 0.25,
+                "images": [
+                    {
+                        "imageId": "188021",
+                        "imageLabel": "",
+                        "imageTag": "<img src=\"~/arquivos/ids/188021-#width#-#height#/1624073-KG.jpg\" width=\"#width#\" height=\"#height#\" alt=\"Queso-Mantecoso-Rio-Bueno-Granel\" id=\"\" />",
+                        "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/188021/1624073-KG.jpg",
+                        "imageText": "Queso-Mantecoso-Rio-Bueno-Granel"
+                    }
+                ],
+                "sellers": [
+                    {
+                        "sellerId": "1",
+                        "sellerName": "Jumbo Chile Homolog",
+                        "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=10989&qty=1&seller=1&sc=1&price=479600&cv=743d264cacb101b46a24c43c7887c570_geral:555DF4C741DAACB9FC3E9E69951B72F7&sc=1",
+                        "sellerDefault": true,
+                        "commertialOffer": {
+                            "DeliverySlaSamplesPerRegion": {
+                                "0": {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                },
+                                "1": {
+                                    "DeliverySlaPerTypes": [
+                                        {
+                                            "TypeName": "Retiro en Tienda",
+                                            "Price": 990,
+                                            "EstimatedTimeSpanToDelivery": "00:00:00"
+                                        }
+                                    ],
+                                    "Region": {
+                                        "IsPersisted": true,
+                                        "IsRemoved": false,
+                                        "Id": 1,
+                                        "Name": "Santiago",
+                                        "CountryCode": "CHL",
+                                        "ZipCode": "8320000",
+                                        "CultureInfoName": "arn-CL"
+                                    }
+                                }
+                            },
+                            "Installments": [
+                                {
+                                    "Value": 4796,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 4796,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "Pago de Pruebas",
+                                    "PaymentSystemGroupName": "custom201PaymentGroupPaymentGroup",
+                                    "Name": "Pago de Pruebas à vista"
+                                },
+                                {
+                                    "Value": 4796,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 4796,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "WEBPAY (PaymentHub) ",
+                                    "PaymentSystemGroupName": "PaymentHubPaymentGroup",
+                                    "Name": "WEBPAY (PaymentHub)  à vista"
+                                },
+                                {
+                                    "Value": 4796,
+                                    "InterestRate": 0,
+                                    "TotalValuePlusInterestRate": 4796,
+                                    "NumberOfInstallments": 1,
+                                    "PaymentSystemName": "CAT (PaymentHub) ",
+                                    "PaymentSystemGroupName": "PaymentHubPaymentGroup",
+                                    "Name": "CAT (PaymentHub)  à vista"
+                                }
+                            ],
+                            "DiscountHighLight": [],
+                            "GiftSkuIds": [],
+                            "Teasers": [],
+                            "BuyTogether": [],
+                            "Price": 4796,
+                            "ListPrice": 4796,
+                            "PriceWithoutDiscount": 4796,
+                            "RewardValue": 0,
+                            "PriceValidUntil": "2018-09-21T20:18:08.6920088Z",
+                            "AvailableQuantity": 1000000,
+                            "Tax": 0,
+                            "DeliverySlaSamples": [
+                                {
+                                    "DeliverySlaPerTypes": [],
+                                    "Region": null
+                                },
+                                {
+                                    "DeliverySlaPerTypes": [
+                                        {
+                                            "TypeName": "Retiro en Tienda",
+                                            "Price": 990,
+                                            "EstimatedTimeSpanToDelivery": "00:00:00"
+                                        }
+                                    ],
+                                    "Region": {
+                                        "IsPersisted": true,
+                                        "IsRemoved": false,
+                                        "Id": 1,
+                                        "Name": "Santiago",
+                                        "CountryCode": "CHL",
+                                        "ZipCode": "8320000",
+                                        "CultureInfoName": "arn-CL"
+                                    }
+                                }
+                            ],
+                            "GetInfoErrorMessage": null,
+                            "CacheVersionUsedToCallCheckout": "743d264cacb101b46a24c43c7887c570_geral:555DF4C741DAACB9FC3E9E69951B72F7"
+                        }
+                    }
+                ]
+            }
+        ]
+    }

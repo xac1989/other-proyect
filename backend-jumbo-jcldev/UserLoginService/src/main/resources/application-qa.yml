@@ -1,0 +1,37 @@
+twitter:
+  android:
+    consumerKey: "knJVYYGgGFlVPOxT06GAUSqah"
+    consumerSecretKey: "zSOm7CgwOQxeMqbYYC8oxXSlREj6TEWxG6DySp2kJ698J1deEU"
+  ios:
+    consumerKey: "knJVYYGgGFlVPOxT06GAUSqah"
+    consumerSecretKey: "zSOm7CgwOQxeMqbYYC8oxXSlREj6TEWxG6DySp2kJ698J1deEU"
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.cencosud.middleware.login: DEBUG
+        
+endpoints:
+    enabled: false
+    health:
+        enabled: true
+vtex  : 
+    r2  :
+      vtexToken :
+        schema  : http
+        host    : vtexid.vtex.com.br
+        path    : /api/vtexid/pub/authentication/start
+        scope   : jumbochilehomolog
+      vtexLogin :
+        schema  : http
+        host  : jumbochilehomolog.vtexcommercestable.com.br
+        path    : /api/vtexid/pub/authentication/classic/validate
+      vtexCookie:
+        path    : /
+        domain  : .jumbochilehomolog.vtexcommercestable.com.br
+janisProperties :
+      schema      : http
+      host        : janisqa.in
+      path        : /api/v2/customer/get-email-by-doc
+      port        : 80
+      headerKey   : Janis-Client        
+      headerValue : jumbochilehomolog     

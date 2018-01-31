@@ -1,0 +1,7 @@
+{
+	"modelPackage" 	: "com.cencosud.mobile.order.model",
+	"apiPackage" 	: "com.cencosud.mobile.order.adapter",
+	"additionalProperties" : {
+		"autowiredSpringService"  : "true"
+	}
+}

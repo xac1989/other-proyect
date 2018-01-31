@@ -1,0 +1,158 @@
+---
+swagger: "2.0"
+info:
+  x-ibm-name: "userprofile"
+  title: "UserProfile"
+  version: "1.0.0"
+schemes:
+- "https"
+host: "$(catalog.host)"
+basePath: "/userprofile/r1/v1"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+securityDefinitions:
+  clientIdHeader:
+    type: "apiKey"
+    in: "header"
+    name: "X-IBM-Client-Id"
+security:
+- clientIdHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  assembly:
+    execute:
+    - set-variable:
+        title: "set-api-variables"
+        actions:
+        - value: "v1"
+          add: "api_version"
+        - value: "r1"
+          add: "api_region"
+    - set-variable:
+        title: "set-credentials"
+        actions:
+        - value: "cencoappuser"
+          add: "http_user"
+        - value: "HjztW7dQL7Y8XJ5cZbpfgMHb"
+          add: "http_pass"
+    - set-variable:
+        title: "set-base-url"
+        actions:
+        - value: "cencodev-user-profile-service.mybluemix.net"
+          add: "base_url"
+    - operation-switch:
+        title: "operation-switch"
+        case:
+        - operations:
+          - verb: "get"
+            path: "/profile"
+          execute:
+          - invoke:
+              target-url: "https://$(base_url)/UserProfileService/profile?profileId=$(request.parameters.id)"
+              username: "$(http_user)"
+              password: "$(http_pass)"
+        - operations:
+          - verb: "put"
+            path: "/profile"
+          - verb: "post"
+            path: "/profile"
+          execute:
+          - invoke:
+              target-url: "https://$(base_url)/UserProfileService/profile"
+              username: "$(http_user)"
+              password: "$(http_pass)"
+        otherwise: []
+    - map:
+        title: "map"
+        inputs:
+          input:
+            schema:
+              type: "object"
+            variable: "message.body"
+            content: "application/json"
+        outputs:
+          output:
+            schema:
+              $ref: "#/definitions/profileResponse"
+            variable: "message.body"
+        actions:
+        - set: "output.profile"
+          from: "input"
+        - set: "output.metadata.region"
+          default: "$(api_region)"
+        - set: "output.metadata.version"
+          default: "$(api_version)"
+        - set: "output.metadata.requestTime"
+          default: "$(request.date)"
+  phase: "realized"
+paths:
+  /profile:
+    get:
+      responses:
+        200:
+          description: "200 OK"
+      parameters:
+      - name: "id"
+        type: "string"
+        required: true
+        in: "query"
+        description: "User id"
+    post:
+      responses:
+        200:
+          description: "200 OK"
+    put:
+      responses:
+        200:
+          description: "200 OK"
+      parameters:
+      - name: "profile"
+        required: false
+        in: "body"
+        schema:
+          $ref: "#/definitions/profileServiceResponse"
+definitions:
+  favorites:
+    properties:
+      categories:
+        type: "array"
+        items:
+          type: "string"
+    additionalProperties: false
+  profileServiceResponse:
+    properties:
+      favorites:
+        $ref: "#/definitions/favorites"
+      id:
+        type: "string"
+    additionalProperties: false
+  profileResponse:
+    properties:
+      metadata:
+        description: "API Metadata"
+        $ref: "#/definitions/metadata"
+      profile:
+        type: "object"
+        description: "UserProfile"
+    additionalProperties: false
+  metadata:
+    properties:
+      requestTime:
+        type: "string"
+        description: "Api Request Time"
+        example: "Thu, 24 Nov 2016 15:17:32 Z"
+      region:
+        type: "string"
+        description: "API Region"
+        example: "r1"
+      version:
+        type: "string"
+        description: "API Version"
+        example: "v1"
+    additionalProperties: false
+tags: []

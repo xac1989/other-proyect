@@ -1,0 +1,11 @@
+twitter:
+  android:
+    consumerKey: "Nh5IHav7KR55kTy0jyBRy4Ldu"
+    consumerSecretKey: "pcQxU03XMomJUuEuvmExxYr0qJu72rgis3NQiZfhNDUPbB0TWS"
+  ios:
+    consumerKey: "taB0EjT5UXUJoZcXpUu67NSOk"
+    consumerSecretKey: "d0qUoP3ynlfE03Da1TzG1rYqV9T8RNpHQb4oc2e5qoOxyL0etH"
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.cencosud.middleware.login: DEBUG

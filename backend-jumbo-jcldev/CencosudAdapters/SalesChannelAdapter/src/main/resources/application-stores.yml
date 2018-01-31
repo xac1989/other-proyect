@@ -1,0 +1,157 @@
+regions:
+  - name: "Tarapacá"
+    salesChannels:
+    - id: 8
+      name: "Iquique"
+      address: "AV. HEROES DE LA CONCEPCION 2855"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: true
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: false
+  - name: "Antofagasta"
+    salesChannels:
+    - id: 6
+      name: "Antofagasta"
+      address: "ANGAMOS 745"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: true
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: false
+    - id: 7
+      name: "Calama"
+      address: "AV. CHORILLOS #1759"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: true
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: false
+  - name: "Valparaíso"
+    salesChannels:
+    - id: 16
+      name: "Viña del Mar"
+      address: "1 NORTE #2901"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: false
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: true
+    - id: 1
+      name: "Los Andes"
+      address: "AV. ARGENTINA 805"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: true
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: false
+  - name: "Maule"
+    salesChannels:
+    - id: 3
+      name: "Talca el Arenal"
+      address: "EL ARENAL 411"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: true
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: false
+    - id: 4
+      name: "Curico"
+      address: "AV. B.O´HIGGINS 201"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: true
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: false
+  - name: "Biobío"
+    salesChannels:
+    - id: 2
+      name: "Chillan"
+      address: "AV. ARGENTINA 805"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: true
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: false
+  - name: "De los Ríos"
+    salesChannels:
+    - id: 5
+      name: "Valdivia"
+      address: "Errázuriz #1040"
+      deliveryType:
+      - id: 111
+        name: "Recibe en tu casa"
+        enabled: true
+      - id: 112
+        name: "Enviamos tu compra en 90 min"
+        enabled: false
+      - id: 113
+        name: "Retira en el local"
+        enabled: true
+      - id: 114
+        name: "Retira en tu auto"
+        enabled: false

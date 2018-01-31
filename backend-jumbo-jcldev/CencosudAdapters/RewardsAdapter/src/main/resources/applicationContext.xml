@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="com.cencosud.mobile.service.impl.RewardsApiServiceImpl">
+        <property name="apiBaseUrl" value="${api_base_url}"/>
+        <property name="apiClientId" value="${api_client_id}"/>
+        <property name="apiSecret" value="${api_secret}"/>
+    </bean>
+    
+    <bean class="com.cencosud.mobile.service.impl.UserProfileApiServiceImpl">
+    	<property name="apiBaseUrl" value="${api_base_url}"/>
+        <property name="apiClientId" value="${api_client_id}"/>
+        <property name="apiSecret" value="${api_secret}"/>
+    </bean>
+
+    <!-- Define the list of JAX-RS resources to use: -->
+    <bean class="com.github.mfpdev.adapters.spring.integration.JAXRSResourcesRegistryImpl">
+        <property name="resources">
+            <list>
+                <bean class="com.cencosud.mobile.rewards.adapter.r1.RewardsApiWongV1"/>
+                <bean class="com.cencosud.mobile.rewards.adapter.r1.RewardsApiWongV2"/>
+            </list>
+        </property>
+    </bean>
+    
+    <!-- property file used for each profile -->
+    <beans profile="dev,qa,sandbox,uat">
+    	<context:property-placeholder location="classpath:application-${spring.profiles.active}.properties" ignore-unresolvable="true"/>
+    </beans>
+    <!-- property file used as default if no profile is set -->
+    <beans profile="!dev,!qa,!sandobx,!uat">
+    	<context:property-placeholder location="classpath:application-default.properties" ignore-unresolvable="true"/>
+    </beans>
+</beans>

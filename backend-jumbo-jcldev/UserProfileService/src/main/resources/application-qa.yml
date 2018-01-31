@@ -1,0 +1,23 @@
+documentValidateRegex: ^[0-9]{7,8}$
+
+mongoConfig:
+  database: "user_profile"
+
+vtex:
+  r2:
+    schema: http
+    urlVtexApiCrm: "api.vtexcrm.com.br/jumbochilehomolog"
+    port: 80
+    apiKey: ignacio.contreras.cencosud@gmail.com
+    apiSecret: 8P9HJ8Sr
+    urlVtexApiEcom: "jumbochilehomolog.vtexcommercestable.com.br"
+
+security:
+  user:
+    name: cencoappuser
+    password: HjztW7dQL7Y8XJ5cZbpfgMHb
+
+endpoints:
+    enabled: false
+    health:
+        enabled: true

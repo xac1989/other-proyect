@@ -1,0 +1,11 @@
+twitter:
+  android:
+    consumerKey: "jWtk2JRXB6BLOGi1yzsnMC6fL"
+    consumerSecretKey: "q4MZ2O8cRS3YgUYubXmgs1aShWI4AyvKd2tLrrKjGpDyFExgXh"
+  ios:
+    consumerKey: "7Up1gwmDSlofJKwrTpYla7Yow"
+    consumerSecretKey: "fFRopLdDa5fMdBjV71066v42GnLDaGIyTViSkIDNPLcJV5tsBD"
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.cencosud.middleware.login: ERROR

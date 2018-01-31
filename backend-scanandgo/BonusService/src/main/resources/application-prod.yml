@@ -1,0 +1,14 @@
+client:
+  default-uri: https://cap-sg-prd-3.integration.ibmcloud.com:15172/LOY/Member/LoyaltyMember
+  ssl:
+    trust-store: classpath:cert/key.jks
+    trust-store-password: changeit
+security:
+  user:
+    name: cencoappuser
+    password: HjztW7dQL7Y8XJ5cZbpfgMHb
+    
+endpoints:
+    enabled: false
+    health:
+        enabled: true

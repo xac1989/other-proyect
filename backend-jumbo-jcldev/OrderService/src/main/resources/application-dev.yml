@@ -1,0 +1,19 @@
+vtex:
+  r1:
+    schema: http
+    url: "wongqa.vtexcommercestable.com.br"
+    port: "80"
+    apiKey: "gabriel.rodriguez@globant.com"
+    apiSecret: "Cencodev1"
+  r2:
+    schema: http
+    url: "jumbochilehomolog.vtexcommercestable.com.br"
+    port: "80"
+    apiKey: "ignacio.contreras.cencosud@gmail.com"
+    apiSecret: "8P9HJ8Sr"
+    paymentTicketUrl : "https://escritorio.acepta.com/portalboletas/buscarboletaindex.php?empresa=81201000-K"
+  
+endpoints:
+    enabled: false
+    health:
+        enabled: true

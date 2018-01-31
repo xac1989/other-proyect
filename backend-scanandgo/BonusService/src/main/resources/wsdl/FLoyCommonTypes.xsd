@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://xmlns.cencosud.corp/Loyalty/LoyCommonTypes" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://xmlns.cencosud.corp/Loyalty/LoyCommonTypes">
+
+
+	<xs:complexType name="MemberIdentifierType">
+		<xs:sequence>
+
+			<xs:element name="DocumentType">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="RUT"/>
+						<xs:enumeration value="Pasaporte"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+
+			<xs:element name="DocumentNumber" type="xs:string"/>
+			<xs:element name="Country">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="56"/>
+						<xs:enumeration value="54"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LoyaltyProgram">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Puntos Cencosud"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="AddressType">
+		<xs:sequence>
+			<xs:element name="Street" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Region" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="County" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Number" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Province" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="DeptoBlock" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="Reference" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="City" type="xs:string" maxOccurs="1" minOccurs="0"/>
+			<xs:element name="PostalCode" type="xs:string" maxOccurs="1" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="isValid" use="optional" type="xs:boolean"/>
+	</xs:complexType>
+
+	<xs:complexType name="QuoteItemType">
+		<xs:sequence>
+			<xs:element name="ProductId" type="xs:string"/>
+			<xs:element name="Qty" type="xs:integer"/>
+			<xs:element name="Price" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ListOfQuoteItemsType">
+		<xs:sequence>
+			<xs:element name="Quote" type="tns:QuoteItemType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="VoucherType">
+		<xs:sequence>
+			<xs:element name="VoucherNumber" type="xs:string"/>
+			<xs:element name="ProductName" type="xs:string"/>
+			<xs:element name="MemberNumber" type="xs:string"/>
+			<xs:element name="Status" type="xs:string"/>
+			<xs:element name="VoucherCode" type="xs:string"/>
+			<xs:element name="ExpirationDate" type="xs:date"/>
+			<xs:element name="Qty" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ListOfVoucherItemsType">
+		<xs:sequence>
+			<xs:element name="Voucher" type="tns:VoucherType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="lastpage" use="optional" type="xs:boolean"/>
+	</xs:complexType>
+
+
+	<xs:complexType name="ErrorType">
+		<xs:sequence>
+			<xs:element name="Code" type="xs:string"/>
+			<xs:element name="Description" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="Error" type="tns:ErrorType"/>
+
+</xs:schema>

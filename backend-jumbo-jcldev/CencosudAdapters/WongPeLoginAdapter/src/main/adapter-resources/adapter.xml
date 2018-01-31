@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mfp:adapter name="WongPeLoginAdapter"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mfp="http://www.ibm.com/mfp/integration"
+	xmlns:http="http://www.ibm.com/mfp/integration/http">
+
+	<displayName>WongPe Login Adapter</displayName>
+	<description>Adapter that provides login with for username and password</description>
+
+	<securityCheckDefinition name="WongPeLoginAdapter" class="com.cencosud.mobile.adapter.WongPeLoginAdapter">
+		<property name="maxAttempts" defaultValue="10" description="How many attempts are allowed." />
+        <property name="blockedStateExpirationSec" defaultValue="10" description="How long before the client can try again (seconds)." />
+        <property name="successStateExpirationSec" defaultValue="3600" description="How long is a successful state valid for (seconds)." />
+		<property name="rememberMeDurationSec" defaultValue="3600" description="How long is the user remembered by the RememberMe feature (seconds)." />
+
+		<property name="keepOriginalToken" type="boolean"
+            defaultValue="false" displayName="keep original token"
+            description="If true, the token submitted by the client is stored in the Authenticated User as an attribute 'originalToken'" />
+        <property name="api_base_url" displayName="Api base url" defaultValue="https://api.us.apiconnect.ibmcloud.com/supermercados-cencosud-wong-development/wong-dev" />
+        <property name="api_client_id" displayName="Api client id to access api manager" defaultValue="9980e9d4-5fda-4164-bbbe-469a12fc5471" />
+        <property name="api_secret" displayName="Api secret to access api manager" defaultValue="aG1sA4sS4eO2qP6mJ5iA7oX8tN3kC3fY5bD6tI7wL2xN8vP4eB" />
+	</securityCheckDefinition>
+
+</mfp:adapter>

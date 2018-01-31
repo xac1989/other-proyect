@@ -1,0 +1,9 @@
+---
+applications:
+- name: scan-and-go-dev-product-batch
+  memory: 512M
+  host: scan-and-go-dev-product-batch
+  domain: mybluemix.net
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+    ES_JAVA_OPTS: "-Xms1g -Xmx1g"

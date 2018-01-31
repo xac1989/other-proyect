@@ -1,0 +1,81 @@
+{
+    "productId": "11369",
+    "productName": "Iphone 6 32gb",
+    "brand": "Apple",
+    "linkText": "iphone-6-32gb-11369",
+    "productReference": "1313000000",
+    "categoryId": "189",
+    "clusterHighlights": {},
+    "categories": [
+        "/Electrohogar/Linea Blanca/Refrigeración/",
+        "/Electrohogar/Linea Blanca/",
+        "/Electrohogar/"
+    ],
+    "categoriesIds": [
+        "/137/185/189/",
+        "/137/185/",
+        "/137/"
+    ],
+    "link": "https://jumbochilehomolog.vtexcommercestable.com.br/iphone-6-32gb-11369/p",
+    "ProductData": [
+        "{\"ref_id\":\"1313000000\",\"allow_notes\":true,\"allow_substitute\":true,\"cart_limit\":\"0\",\"brandName\":\"Apple\"}"
+    ],
+    "SkuData": [
+        "[]"
+    ],
+    "Configuraciones": [
+        "ProductData",
+        "SkuData"
+    ],
+    "allSpecifications": [
+        "ProductData",
+        "SkuData"
+    ],
+    "description": "Iphone 6 32gb",
+    "items": [
+        {
+            "itemId": "11619",
+            "name": "Iphone 6 32gb",
+            "nameComplete": "Iphone 6 32gb",
+            "complementName": "",
+            "ean": "1313000000",
+            "measurementUnit": "un",
+            "unitMultiplier": 1,
+            "images": [
+                {
+                    "imageId": "188870",
+                    "imageLabel": "",
+                    "imageTag": "<img src=\"~/arquivos/ids/188870-#width#-#height#/iphone632gb.jpg\" width=\"#width#\" height=\"#height#\" alt=\"iphone632gb\" id=\"\" />",
+                    "imageUrl": "https://jumbochilehomolog.vteximg.com.br/arquivos/ids/188870/iphone632gb.jpg",
+                    "imageText": "iphone632gb"
+                }
+            ],
+            "sellers": [
+                {
+                    "sellerId": "1",
+                    "sellerName": "Jumbo Chile Homolog",
+                    "addToCartLink": "https://jumbochilehomolog.vtexcommercestable.com.br/checkout/cart/add?sku=11619&qty=1&seller=1&sc=6&price=0&cv=c8ffa564e05f6de241de64feb10ad1b0_geral:8A0454F83FDFBB7D18E484919AC94500&sc=6",
+                    "sellerDefault": true,
+                    "commertialOffer": {
+                        "DeliverySlaSamplesPerRegion": {},
+                        "Installments": [],
+                        "DiscountHighLight": [],
+                        "GiftSkuIds": [],
+                        "Teasers": [],
+                        "BuyTogether": [],
+                        "Price": 0,
+                        "ListPrice": 0,
+                        "PriceWithoutDiscount": 0,
+                        "RewardValue": 0,
+                        "PriceValidUntil": null,
+                        "AvailableQuantity": 0,
+                        "Tax": 0,
+                        "DeliverySlaSamples": [],
+                        "GetInfoErrorMessage": "Code: withoutStock Status:error Message: No está más disponible el item Iphone 6 32gb y el lo fue retirado del carrito",
+                        "CacheVersionUsedToCallCheckout": "c8ffa564e05f6de241de64feb10ad1b0_geral:8A0454F83FDFBB7D18E484919AC94500"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+vtex:
+  schema: http
+  url: "jumbochilehomolog.vtexcommercestable.com.br"
+  port: "80"
+  apiKey: "ignacio.contreras.cencosud@gmail.com"
+  apiSecret: "8P9HJ8Sr"
+vtexEntities:
+  schema: http
+  url: "api.vtex.com/jumbochilehomolog"
+  port: "80"
+  apiKey: "ignacio.contreras.cencosud@gmail.com"
+  apiSecret: "8P9HJ8Sr"  
+security:
+  user:
+    name: cencoappuser
+    password: HjztW7dQL7Y8XJ5cZbpfgMHb
+    
+salesChannelInfo:
+    1: {id: "1", address: "AV. ARGENTINA 805"}
+    2: {id: "2", address: "LONGITUDINAL NORTE 134"}
+    3: {id: "3", address: "EL ARENAL 411"}
+    4: {id: "4", address: "AV. B.O´HIGGINS 201"}
+    5: {id: "5", address: "Errázuriz #1040"}
+    6: {id: "6", address: "ANGAMOS 745"}
+    7: {id: "7", address: "AV. CHORILLOS #1759"}
+    8: {id: "8", address: "AV. HEROES DE LA CONCEPCION 2855"}
+    9: {id: "9", address: "Padro de Valdivia 1010"}
+    10: {id: "10", address: "AV. PRES. FREI MONTALVA#750"}
+    11: {id: "11", address: "AV. BILBAO #8750"}
+    12: {id: "12", address: "AV. CAMIINO EL ALBA 11969 LOCAL 101"}
+    13: {id: "13", address: "AV. LA DEHESA #1445"}
+    14: {id: "14", address: "RUTA 5, PARCELA 69 VEGA SUR"}
+    15: {id: "15", address: "EJERCITO 470"}
+    16: {id: "16", address: "1 NORTE #2901"}
+    17: {id: "17", address: "AV. ALEMANIA 633"}
+    18: {id: "18", address: "AV. VICUÑA MACKENNA #6100"}
+          
+endpoints:
+    enabled: false
+    health:
+        enabled: true

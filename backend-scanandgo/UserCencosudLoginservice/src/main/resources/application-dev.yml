@@ -1,0 +1,8 @@
+serviceConfig:
+  urlService: https://jcl.jumbomobile.cl:5002/SMCL_Grability/oauth2/auth
+  urlInfoService: https://jcl.jumbomobile.cl:5002/SMCL_Grability/Clientes
+  clientId: X3JhYmletXR5FXBwbGljYSRpb72O
+security:
+  user:
+    name: cencoappuser
+    password: HjztW7dQL7Y8XJ5cZbpfgMHb
